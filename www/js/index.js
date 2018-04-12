@@ -59,6 +59,7 @@ function listenForShake() {
 }
 
 function shakeEventDidOccur () {
+    alert("SHOOK");
     if(toggleByShake) {
         if(currentTheme == THEME_BRIGHT) {
             toggleDark();
