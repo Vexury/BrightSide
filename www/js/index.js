@@ -45,8 +45,10 @@ function startApp() {
 function toggleShake() {
     toggleByShake = !toggleByShake;
     if(toggleByShake) {
+        alert("start listening for shakes");
         listenForShake();
     } else {
+        alert("stop listening for shakes");
         window.removeEventListener('shake', shakeEventDidOccur, false);
         myShakeEvent.stop();
     }
