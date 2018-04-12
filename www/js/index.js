@@ -34,7 +34,7 @@ function startApp() {
 
     setTimeout(function () {
         if(!supported) {
-            alert("Your browser doesnt support ambient light!");
+            alert("Your browser doesnt support ambient light! You can still use the shake function!");
         }
     }, 1000);
     
