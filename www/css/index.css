@@ -68,6 +68,26 @@ html, body {
     text-align: justify;
 }
 
+
+@media all and (max-width: 700px){
+    #title {
+        font-size: 5vw;
+    }
+    #info {
+        font-size: 4vw;
+    }
+    #shakeOptionText {
+        font-size: 4vw;
+    }
+    #lorem {
+        font-size: 3vw;
+    }
+
+    #brightness {
+        font-size: 4vw;
+    }
+
+}
 @media all and (min-width: 700px){
     #bigWrap {
         overflow: hidden;
