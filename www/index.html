@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-    
+
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
     <!-- Good default declaration:
@@ -36,40 +36,46 @@
 
     <div id="title">
         Welcome to the BrightSite!<br/>
+    </div>
+
+    <div id="info">
         This site automatically uses a dark or a bright theme depending on your ambient light!<br/>
     </div>
 
 
+    <div id="bigWrap">
+        <div id="left-side">
+            <div id="shakeOption">
+                <div id="shakeOptionText">
+                    Switch theme by shaking your device only
+                </div>
+                <!-- Rounded switch -->
+                <label id="shakeOptionBtn" class="switch">
+                    <input type="checkbox" onclick="toggleShake()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
 
-    <div id="shakeOption">
-        <div id="shakeOptionText">
-            Switch theme by shaking your device only
+            <div id="brightness">
+                Current ambient brightness: none
+            </div>
         </div>
-        <!-- Rounded switch -->
-        <label id="shakeOptionBtn" class="switch">
-            <input type="checkbox" onclick="toggleShake()">
-            <span class="slider round"></span>
-        </label>
+
+
+        <div id="right-side">
+            <div id="lorem">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+                feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+
     </div>
-
-    <div id="brightness">
-        Current ambient brightness: none
-    </div>
-
-
-    <div id="lorem">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-        Lorem ipsum dolor sit amet
-    </div>
-
-
-
 
 </body>
 

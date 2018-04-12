@@ -17,7 +17,7 @@ function startApp() {
 
     window.addEventListener('devicelight', function (event) {
         supported = true;
-        document.querySelector("#brightness").innerHTML = "Current ambient brightness: " + event.value;
+        document.querySelector("#brightness").innerHTML = "Current ambient brightness: " + event.value + " lux";
         brightness = event.value;
 
         if(!toggleByShake) {
