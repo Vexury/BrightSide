@@ -1,4 +1,4 @@
-document.onload = startApp();
+//document.onload = startApp();
 
 function startApp() {
 
@@ -18,14 +18,18 @@ function startApp() {
 
 function toogleDark() {
 
-    $("body").css("background-color", "black");
-    $("body").css("color", "white");
+    $('html').css("background-color", "black");
+    $('body').css("background-color", "black");
+    $('html').css("color", "white");
+    $('body').css("color", "white");
 
 }
 
 function toogleBright() {
 
-    $("body").css("background-color", "white");
-    $("body").css("color", "black");
+    $('html').css("background-color", "white");
+    $('body').css("background-color", "white");
+    $('html').css("color", "black");
+    $('body').css("color", "black");
 
 }
