@@ -31,17 +31,19 @@ html, body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 1%;
+    margin-top: 2%;
+    background-color: white;
+    color: black;
 
 }
 
 #title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
 #shakeOption {
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
 #brightness {
