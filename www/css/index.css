@@ -71,20 +71,20 @@ html, body {
 
 @media all and (max-width: 700px){
     #title {
-        font-size: 5vw;
+        font-size: 7vw;
     }
     #info {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     #shakeOptionText {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     #lorem {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     #brightness {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
 }
