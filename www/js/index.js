@@ -5,8 +5,9 @@ function startApp() {
     window.addEventListener('devicelight', function (event) {
         //alert("got event");
         document.querySelector("#brightness").innerHTML = "Current ambient brightness: " + event.value;
-
-        if(event.value < 500) {
+        
+        if(event.value < 200) {
+            alert("Toggling Dark");
             toogleDark();
         } else {
             toogleBright();
