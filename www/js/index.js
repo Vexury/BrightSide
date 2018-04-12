@@ -11,9 +11,7 @@ var currentTheme = THEME_BRIGHT;
 var toggleByShake = false;
 
 // Listeners
-var myShakeEvent = new Shake({
-    threshold: 15
-});
+var myShakeEvent;
 
 function startApp() {
 
@@ -56,6 +54,9 @@ function toggleShake() {
 }
 
 function listenForShake() {
+    myShakeEvent = new Shake({
+        threshold: 15
+    });
     myShakeEvent.start();
     window.addEventListener('shake', shakeEventDidOccur, false);
 }
